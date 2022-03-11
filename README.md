@@ -1,33 +1,9 @@
-# Python User Language Support
-Python User Language Support for [Cloudstate](https://github.com/cloudstateio/cloudstate).
+Cloudstate was an open source protocol and reference implementation exploring ideas for _stateful serverless_, and was originally developed by [Lightbend].
 
-## Installation via source
+The project is no longer active, since 2021. An open source alternative is [Eigr].
 
-```
-> git clone https://github.com/cloudstateio/python-support.git
-Cloning into 'python-support'...
+A continuation of the ideas can be found in Lightbend's platform-as-a-service [Akka Serverless].
 
-> cd python-support
-> python3 -m venv ./venv 
-> source ./venv/bin/activate
-> python --version     
-Python 3.7.3
-> pip --version 
-> pip install wheel
-> pip install .
-```
-
-### generate installer
-```
-python setup.py bdist_wheel
-```
-
-### local install
-```
-python -m pip install dist/cloudstate-<the version>-py3-none-any.whl
-```
-
-### build and run tck, including provisional tests for stateless functions. 
-```
-./extended_tck.sh
-```
+[Lightbend]: https://www.lightbend.com
+[Eigr]: https://eigr.io
+[Akka Serverless]: https://www.lightbend.com/akka-serverless
